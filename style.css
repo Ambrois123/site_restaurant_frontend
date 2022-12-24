@@ -68,11 +68,11 @@ button{
 .nav-logo {
     color: #62929e;
     font-weight: 900;
-    letter-spacing: 0.6rem;
+    /* font-family: 'Great Vibes', cursive; */
 
-}
+} 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1450px) {
     .nav-link {
         font-size: 14px;
     }
@@ -121,3 +121,90 @@ button{
 }
 
 /* header ends*/
+
+/*footer starts*/
+.footer{
+    position: fixed;
+    background-color: #d7c9aa;
+    color: #1d1e18;
+    height: 13rem;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.horaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.horaire p{
+    padding: 5px;
+}
+.horaire h4{
+    border-bottom: 1px solid;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    margin: auto;
+}
+.reseau h4{
+    border-bottom: 1px solid;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    margin: auto;
+}
+.adresse-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.adresse-icons a{
+    color: #1d1e18;
+}
+.adresse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adresse h4{
+    border-bottom: 1px solid;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    margin: auto;
+}
+.adresse p{
+    padding: 5px;
+}
+.adresse a{
+    text-decoration: none;
+    color: #1d1e18;
+    font-style: italic;
+}
+
+/*footer ends*/
+
+/*section-1 starts*/
+
+/*section-1 ends*/
+
+
+
+
+
+/*media queries*/
+@media only screen and (max-width: 1100px){
+    .footer{
+        flex-direction: column;
+        height: 28rem;
+        gap: 2rem;
+    }
+}
