@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;500;700&family=Poppins:wght@200;400&display=swap');
+
+/*general param*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+/*end general param*/
+
+/*header starts*/
+.header {
+    /*border-bottom: 1px solid #ffbd00;*/
+    position: sticky;
+    max-height: 9rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #1d1e18;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 35px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #d7c9aa;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+.nav-link {
+    font-size: 15px;
+    font-weight: 400;
+    color:#d7c9aa;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+
+}
+.nav-link:hover {
+    color: #62929e;
+}
+.nav-logo {
+    color: #62929e;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3.8rem;
+        flex-direction: column;
+        background-color: #1d1e18;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+.reserve a{
+    text-decoration: none;
+    color: #d7c9aa;
+}
+.reserve{
+    background-color: #62929e;
+    width: 5rem;
+}
+.connect a{
+    color: #1d1e18;
+    text-decoration: none;
+}
+
+/* header ends*/
