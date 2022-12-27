@@ -107,6 +107,13 @@ button{
         transform: translateY(-6px) rotate(-45deg);
     }
 }
+.client a{
+    text-decoration: none;
+    color: #62929e;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
 .reserve a{
     text-decoration: none;
     color: #d7c9aa;
@@ -127,7 +134,7 @@ button{
     position: fixed;
     background-color: #d7c9aa;
     color: #1d1e18;
-    height: 13rem;
+    height: 10rem;
     width: 100%;
     bottom: 0;
     display: flex;
@@ -192,9 +199,85 @@ button{
 
 /*footer ends*/
 
-/*section-1 starts*/
+/*section-reservation starts*/
+.mainPage{
+    min-height: 62rem;
+}
+.mainPage h1{
+    border-bottom: 1px solid;
+    text-align: center;
+    font-weight: 800;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 45%;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 1px;
+}
+.section-reservation{
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 80%;
+    gap: 0;
+    /* border: 1px solid black; */
+}
+.section-reservation-photo{
+    width: 100%;
+    max-width: 30rem;
+    margin: 0;
+    padding: 0;
+}
+.section-reservation-contact{
+    width: 40%;
+    margin: 0;
+    padding-left: 5px;
+}
+.image, .contact-form{
+    max-height: 32rem;
+    /* box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7); */
+}
+img{
+    width: 100%;
+}
+fieldset{
+    height: 4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+}
+.form-group{
+    margin: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"]{
+    width: 100%;
+    height: 28px;
+}
+input[type="submit"]{
+    width: 25%;
+    height: 28px;
+    border: none;
+    margin-top: 20px;
+    background-color: #1d1e18;
+    color: #d7c9aa;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #62929e;
+}
+.form-group-submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/*section-1 ends*/
+/*section-reservation ends*/
 
 
 
